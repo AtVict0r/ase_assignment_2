@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #26333c;
+}
+
+div.container {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+div.form-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+form div.form-group {
+    gap: 10px;
+}
+
+input {
+    background-color: #26333c;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"].active,
+input[type="submit"] {
+    background-color: #32a983;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="button"].inactive,
+input[type="submit"] {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="button"].inactive {
+    background-color: #455259;
+}
+
+input::placeholder {
+    color: #979ea2; 
+}
+
+.asteric-text {
+    color: #32a983;
+}
